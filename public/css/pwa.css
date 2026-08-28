@@ -1,0 +1,64 @@
+.pwa-install-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 38px;
+    padding: 8px 13px;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.intern-login-install {
+    width: 100% !important;
+    margin: 0 0 18px;
+    background: rgba(37, 99, 235, 0.9);
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+.intern-login-install:hover {
+    background: #1d4ed8;
+}
+
+.pwa-install-btn:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+}
+
+.nav-actions .pwa-install-btn {
+    color: #2563eb;
+    border-color: rgba(37, 99, 235, 0.35);
+}
+
+.nav-actions .pwa-install-btn:hover {
+    background: #eff6ff;
+}
+
+.supervisor-actions .pwa-install-btn {
+    margin: 0 10px;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 640px) {
+    .nav-actions .pwa-install-btn span,
+    .supervisor-actions .pwa-install-btn span {
+        display: none;
+    }
+
+    .nav-actions .pwa-install-btn,
+    .supervisor-actions .pwa-install-btn {
+        width: 38px;
+        padding: 8px;
+    }
+}
